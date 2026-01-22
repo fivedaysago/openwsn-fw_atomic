@@ -13,7 +13,7 @@
 #include "coap.h"
 #include "packetfunctions.h"
 // #include "leds.h"
-#include "cf_multiranger.h"
+//#include "cf_multiranger.h"
 #include "openqueue.h"
 
 //=========================== variables =======================================
@@ -89,11 +89,11 @@ owerror_t ccrazyflie_receive(OpenQueueEntry_t *msg,
             //     msg->payload[0] = '0';
             // }
 
-            if (mutiranger_up_isClose()) {
-                msg->payload[0] = '1';
-            } else {
-                msg->payload[0] = '0';
-            }
+            //if (mutiranger_up_isClose()) {
+            //    msg->payload[0] = '1';
+            //} else {
+            //    msg->payload[0] = '0';
+            //}
 
             // set the CoAP header
             coap_header->Code = COAP_CODE_RESP_CONTENT;

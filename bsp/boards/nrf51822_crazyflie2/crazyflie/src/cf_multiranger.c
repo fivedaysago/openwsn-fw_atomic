@@ -51,7 +51,7 @@
 static struct mutiranger_data mutiranger_values = {0, 0, 0, 0, 0, 0};
 static int variable_id[6] = {LOG_RANGER_FRONT_ID, LOG_RANGER_BACK_ID, LOG_RANGER_LEFT_ID, LOG_RANGER_RIGHT_ID, LOG_RANGER_UP_ID, LOG_RANGER_ZRANGE_ID};
 static int block_id = 0;
-static uint16_t isCloseThreshold = 200; // mm
+static uint16_t isCloseThreshold = 250; // mm
 
 //=========================== prototypes ======================================
 

@@ -7,7 +7,7 @@
 \addtogroup msf
 \{
 */
-
+#include <stdbool.h>
 #include "opendefs.h"
 #include "opentimers.h"
 #include "schedule.h"

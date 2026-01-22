@@ -9,7 +9,7 @@
 */
 
 #include "opendefs.h"
-
+#include <stdbool.h>
 //=========================== define ==========================================
 
 enum IEEE802154_fcf_enums {

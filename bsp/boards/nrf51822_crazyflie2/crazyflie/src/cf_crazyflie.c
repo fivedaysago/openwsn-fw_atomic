@@ -24,9 +24,8 @@
 #include "cf_ctrp.h"
 #include "cf_multiranger.h"
 #include "cf_movement_queue.h"
-
 #include "single_status_led.h"
-
+#include "radio.h"           
 //=========================== defines =========================================
 
 #ifdef BLE
@@ -34,6 +33,22 @@ int volatile bleEnabled = 1;
 #else
 int volatile bleEnabled = 0;
 #endif
+
+// ===define of the multiranger===
+#define PACKET_TYPE_MULTIRANGER 0xAA
+
+typedef struct __attribute__((packed)) {
+    uint8_t  type;          // 0xAA
+    uint8_t  drone_id;      // 
+    uint16_t dist_front;
+    uint16_t dist_back;
+    uint16_t dist_left;
+    uint16_t dist_right;
+    uint16_t dist_up;
+} broadcast_payload_t;
+
+// send buffer
+static uint8_t radio_buffer[32];
 
 //=========================== variables =======================================
 static bool stm_ready = false;
@@ -171,7 +186,7 @@ void _syslinkHandle()
     case SYSLINK_RADIO_CONTWAVE:
       if (slRxPacket.length == 1)
       {
-        // esbSetContwave(slRxPacket.data[0]);
+         //esbSetContwave(slRxPacket.data[0]);
 
         slTxPacket.type = SYSLINK_RADIO_CONTWAVE;
         slTxPacket.data[0] = slRxPacket.data[0];

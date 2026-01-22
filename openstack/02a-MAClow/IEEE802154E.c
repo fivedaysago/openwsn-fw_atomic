@@ -2288,21 +2288,21 @@ port_INLINE void incrementAsnOffset(void) {
         //ENABLE_INTERRUPTS();
         
         //status_led_set(LED_BLINK_LSS);
-        if (asn_diff == 0)
-        {
-           high_level_enable();
-           //leds_all_on();
-        }
-        if (asn_diff == 50)
-        {
-           high_level_takeoff(0.7, 1.0, 0.0);
-           //param_read(10);
-        }
+        //if (asn_diff == 0)
+        //{
+        //   high_level_enable();
+        //   //leds_all_on();
+        //}
+        //if (asn_diff == 50)
+        //{
+        //   high_level_takeoff(0.7, 1.0, 0.0);
+        //   //param_read(10);
+        //}
 
-        if (asn_diff > 50 && asn_diff < 600)
-        {
-           cf_movement_queue_handle(&ieee154e_vars.asn);
-        }
+        //if (asn_diff > 50 && asn_diff < 600)
+        //{
+        //   cf_movement_queue_handle(&ieee154e_vars.asn);
+        //}
         //if (asn_diff == 100)
         //{
         //    high_level_goto(0.5, 0.0, 0.0, 0.0, 1.0, TRUE);
@@ -2328,12 +2328,12 @@ port_INLINE void incrementAsnOffset(void) {
         //    high_level_land(0.0, 1.0, 0.0);
         //    //high_level_goto(-0.5, 0.0, 0.0, 0.0, 1.0, TRUE);
         //}
-        if (asn_diff >= 600 && asn_diff < 9999999)
-        {
-           crazyflieEmergencyStop(); 
-           //leds_all_off();
-           crazyflieShutdown();
-        }
+        //if (asn_diff >= 600 && asn_diff < 9999999)
+        //{
+        //   crazyflieEmergencyStop(); 
+        //   //leds_all_off();
+        //   crazyflieShutdown();
+        //}
     }
     //#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
 
@@ -2754,12 +2754,12 @@ void changeIsSync(bool newIsSync) {
     ieee154e_vars.isSync = newIsSync;
 
     if (ieee154e_vars.isSync == TRUE) {
-        //leds_sync_on();
-        status_led_set(LED_BLINK_LSS);
+        leds_sync_on();
+        //status_led_set(LED_BLINK_LSS);
         resetStats();
     } else {
-        //leds_sync_off();
-        status_led_set(LED_OFF);
+        leds_sync_off();
+        //status_led_set(LED_OFF);
         schedule_resetBackoff();
     }
 }

@@ -299,8 +299,8 @@ void radio_rxNow(void) {
    NRF_RADIO->TASKS_START = (uint32_t)1;
 
    debugpins_radio_set();
-   leds_radio_on();
-
+   //leds_radio_on();
+   
    radio_vars.state  = RADIOSTATE_LISTENING;
 }
 
