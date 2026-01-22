@@ -10,7 +10,7 @@
 
 #include "config.h"
 #include "opendefs.h"
-
+#include <stdbool.h>
 /**
 \addtogroup drivers
 \{

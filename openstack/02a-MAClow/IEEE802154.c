@@ -6,7 +6,7 @@
 #include "openserial.h"
 #include "topology.h"
 #include "IEEE802154_security.h"
-
+#include <stdbool.h>
 //=========================== define ==========================================
 
 //=========================== variables =======================================

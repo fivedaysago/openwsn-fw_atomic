@@ -9,7 +9,7 @@
 #include "scheduler.h"
 #include "openstack.h"
 #include "opendefs.h"
-
+# include "leds.h"
 #include "cf_crazyflie.h"
 
 int mote_main(void) {
@@ -21,7 +21,6 @@ int mote_main(void) {
 
    scheduler_init();
    openstack_init();
-
    // start
    scheduler_start();
    return 0; // this line should never be reached

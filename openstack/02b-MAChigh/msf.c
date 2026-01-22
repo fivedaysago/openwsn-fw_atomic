@@ -11,7 +11,7 @@
 #include "openqueue.h"
 #include "packetfunctions.h"
 #include "openserial.h"
-
+#include <stdbool.h>
 //=========================== definition =====================================
 
 //=========================== variables =======================================

@@ -378,6 +378,11 @@
       macros=""
       project_directory=""
       project_type="Executable" />
+    <configuration
+      Name="Debug"
+      arm_architecture="v6M"
+      arm_core_type="Cortex-M0"
+      arm_fp_abi="Soft" />
     <folder
       Name="application"
       exclude=""

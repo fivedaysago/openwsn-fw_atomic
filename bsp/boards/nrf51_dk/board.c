@@ -34,8 +34,7 @@ void board_init(void) {
     while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0);
 
     leds_init();
-
-    uart_init();
+    //uart_init();
     sctimer_init();
     radio_init(); //Temp BLE
 

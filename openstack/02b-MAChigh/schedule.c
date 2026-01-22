@@ -9,7 +9,7 @@
 #include "IEEE802154E.h"
 #include "icmpv6rpl.h"
 #include "neighbors.h"
-
+#include <stdbool.h>
 //=========================== definition ======================================
 
 //=========================== variables =======================================
