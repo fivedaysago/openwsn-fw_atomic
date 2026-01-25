@@ -165,8 +165,8 @@
   <Watches active="1" update="Twice a Second">
    <Watchpoint expression="slRxPacket" name="slRxPacket" radix="-1" linenumber="152" filename="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_crazyflie.c"/>
    <Watchpoint expression="mutiranger_values" name="mutiranger_values" radix="-1" linenumber="85" filename="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_multiranger.c"/>
-   <Watchpoint expression="rssi" name="rssi" radix="16" linenumber="520" filename="../common/01bsp_radio/01bsp_radio.c"/>
-   <Watchpoint expression="app_vars" name="app_vars" radix="-1" linenumber="520" filename="../common/01bsp_radio/01bsp_radio.c"/>
+   <Watchpoint expression="rssi" name="rssi" radix="16" linenumber="473" filename="../common/01bsp_radio/01bsp_radio.c"/>
+   <Watchpoint expression="app_vars" name="app_vars" radix="-1" linenumber="473" filename="../common/01bsp_radio/01bsp_radio.c"/>
    <Watchpoint expression="ieee154e_vars" name="ieee154e_vars" radix="-1" linenumber="2282" filename="../../openstack/02a-MAClow/IEEE802154E.c"/>
    <Watchpoint expression="pRssi" name="pRssi" radix="-1" linenumber="339" filename="../../bsp/boards/nrf51822_crazyflie2/radio.c"/>
   </Watches>
@@ -181,11 +181,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="20" useTextEdit="1" path="../common/01bsp_radio/01bsp_radio.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="17" useTextEdit="1" path="../common/01bsp_radio/01bsp_radio.c" left="0" selected="1" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="36" y="418" useTextEdit="1" path="../../inc/config.h" left="0" top="404" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="113" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_movement_queue.c" left="0" top="230" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="113" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_movement_queue.c" left="0" top="113" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="20" useTextEdit="1" path="../common/03oos_openwsn/03oos_openwsn.c" left="0" top="6" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="75" useTextEdit="1" openedFrom="D:/Projects/Atomic/swarm/openwsn-fw_atomic/kernel/openos/scheduler.c" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_crazyflie.c" left="0" top="210" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="75" useTextEdit="1" openedFrom="D:/Projects/Atomic/swarm/openwsn-fw_atomic/kernel/openos/scheduler.c" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_crazyflie.c" left="0" top="75" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="29" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/board.c" left="0" top="18" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="427" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/radio.c" left="0" top="389" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="3" y="176" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/sctimer.c" left="0" top="138" codecName="Default"/>
@@ -209,7 +209,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/cf_uart.c" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/src/single_status_led.c" left="0" top="53" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="5" y="55" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/leds.c" left="0" top="38" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="2335" useTextEdit="1" path="../../openstack/02a-MAClow/IEEE802154E.c" left="0" top="51" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="2335" useTextEdit="1" path="../../openstack/02a-MAClow/IEEE802154E.c" left="0" top="2298" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../bsp/boards/nrf51822_crazyflie2/crazyflie/interface/cf_movement_queue.h" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../openapps/ccrazyflie/ccrazyflie.c" left="0" top="99" codecName="Default"/>
  </Files>
